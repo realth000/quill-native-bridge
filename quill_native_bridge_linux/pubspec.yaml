@@ -5,7 +5,7 @@ homepage: https://github.com/FlutterQuill/quill-native-bridge/tree/main/quill_na
 repository: https://github.com/FlutterQuill/quill-native-bridge/tree/main/quill_native_bridge_linux
 issue_tracker: https://github.com/FlutterQuill/quill-native-bridge/issues?q=is%3Aissue+is%3Aopen+label%3A%22platform-linux%22
 documentation: https://github.com/FlutterQuill/quill-native-bridge/tree/main/quill_native_bridge_linux
-topics: [clipboard, os-integration, quill-native-bridge, quill, flutter-quill]
+topics: [ clipboard, os-integration, quill-native-bridge, quill, flutter-quill ]
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -14,7 +14,8 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  quill_native_bridge_platform_interface: ^0.0.1-dev.4
+  quill_native_bridge_platform_interface:
+    path: ../quill_native_bridge_platform_interface
 
 dev_dependencies:
   flutter_test:
@@ -24,8 +25,6 @@ dev_dependencies:
   yaml: ^3.1.2
 
 flutter:
-  assets:
-  - assets/xclip
   plugin:
     implements: quill_native_bridge
     platforms:

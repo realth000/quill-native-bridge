@@ -5,7 +5,7 @@ homepage: https://github.com/FlutterQuill/quill-native-bridge/tree/main/quill_na
 repository: https://github.com/FlutterQuill/quill-native-bridge/tree/main/quill_native_bridge_web
 issue_tracker: https://github.com/FlutterQuill/quill-native-bridge/issues?q=is%3Aissue+is%3Aopen+label%3A%22platform-web%22
 documentation: https://github.com/FlutterQuill/quill-native-bridge/tree/main/quill_native_bridge_web
-topics: [clipboard, os-integration, quill-native-bridge, quill, flutter-quill]
+topics: [ clipboard, os-integration, quill-native-bridge, quill, flutter-quill ]
 
 environment:
   sdk: '>=3.0.0 <4.0.0'
@@ -17,7 +17,8 @@ dependencies:
   flutter_web_plugins:
     sdk: flutter
   web: ^1.0.0
-  quill_native_bridge_platform_interface: ^0.0.1-dev.4
+  quill_native_bridge_platform_interface:
+    path: ../quill_native_bridge_platform_interface
 
 dev_dependencies:
   flutter_test:
